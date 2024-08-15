@@ -5,12 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>D-MAK studio PVT LTD | Your one-stop shop for world-class 3D assets! </title>
     <link rel="shortcut icon" href="../../../Assets/Logos/image 4.png" type="image/x-icon">
-
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-[#171717] font-Montserrat">
+<body class="bg-[#171717] min-w-[300px]">
   <header class=" h-[150px] lg:h-[160px] bg-[url('../../../Assets/Logos/Navbar.png')] bg-no-repeat bg-left bg-cover">
     <nav class="p-5  shadow md:flex md:items-center md:justify-between">
       <div class="flex justify-between items-center">
@@ -18,7 +17,6 @@
           <a href="../../../index.html"><img class="h-[100px] inline mx-[32px] lg:mx-[50px] mt-3 lg:mt-6"
             src="../../../Assets/Logos/image 4.png"></a>
         </span>
-  
         <span class="text-3xl cursor-pointer mx-2 md:hidden block">
           <ion-icon name="menu" onclick="Menu(this)" class="text-[#EE1C25] text-3xl"></ion-icon>
         </span>
@@ -46,12 +44,12 @@
     </nav>
   </header>
 
-  <main class="min-h-screen flex items-center justify-center mt-2">
-        <div class="container  flex flex-col min-w-[1200px] justify-center items-center"> 
+  <main class="min-h-[500px] flex items-center justify-center mt-2">
+        <div class="container  flex flex-col min-w-[300px] lg:min-w-[1200px] justify-center items-center"> 
             <h2 class="text-[#EE1C25] font-bold lg:text-[48px] w-full text-center text-[24px]">Magic Book</h2>
     
-            <div class="main lg:h-[500px] w-[full] h-[400px] lg:w-[720px] overflow-hidden">
-                <img src="../../../Gaming Props/Magic_Book_01.jpg" class="main-img w-full h-[400px] lg:h-[500px] hover:scale-110  duration-200 object-contain text-center" alt="Battle Zone">
+            <div class="main lg:h-[500px] w-[full] h-[200px] lg:w-[720px] overflow-hidden">
+                <img src="../../../Gaming Props/Magic_Book_01.jpg" class="main-img w-full h-[200px] lg:h-[500px] hover:scale-110  duration-200 object-contain text-center" alt="Battle Zone">
             </div>
             <div class="thumbnail flex flex-col lg:flex-row gap-2 cursor-pointer w-[300px] lg:w-full items-center justify-center flex-wrap mt-2">
                 <img src="../../../Gaming Props/Magic_Book_02.jpg" class="hover:border-2 hover:border-[#EE1C25] thumbnail-img w-[200px] " alt="">
@@ -72,25 +70,27 @@
         <p class="text-center italic text-[#EE1C25]">"WHERE IMAGINATION TAKES FLIGHT"</p>
       </section>
   
-      <section class="lg:mt-[100px] w-28">
-        <ul class="flex flex-col items-start text-[#c8c8c8] lg:justify-center gap-5">
-          <li class="hover:text-[#EE1C25] hover:px-3 duration-200"><a href="../../../index.html">Home</a></li>
-          <li class="hover:text-[#EE1C25] hover:px-3 duration-200"><a href="../../Pages/Aboutus.html">About us</a></li>
-          <li class="hover:text-[#EE1C25] hover:px-3 duration-200"><a href="../../Pages/Projects.html">Projects</a></li>
-          <li class="hover:text-[#EE1C25] hover:px-3 duration-200"><a href="../../Pages/Services.html">What we do</a></li>
-          <li class="hover:text-[#EE1C25] hover:px-3 duration-200"><a href="../../Pages/Career.html">Career</a></li>
-          <li class="hover:text-[#EE1C25] hover:px-3 duration-200"><a href="../../Pages/Contact.html">Contact us</a></li>
-        </ul>
-      </section>
-  
-      <section class="flex flex-col items-start text-[#c8c8c8] justify-center gap-5">
-        <h1 class="text-[#EE1c25] text-lg font-bold text-left">Our Services</h1>
-        <ul class="flex flex-col items-start justify-center gap-5">
-          <li class="hover:text-[#EE1C25] hover:px-3 duration-200">Gaming</li>
-          <li class="hover:text-[#EE1C25] hover:px-3 duration-200">AR/VR</li>
-          <li class="hover:text-[#EE1C25] hover:px-3 duration-200">Production</li>
-        </ul>
-      </section>
+      <div class="flex flex-row gap-10 items-start lg:items-center lg:gap-[150px] my-8">
+        <section class="lg:mt-[100px] w-28">
+          <ul class="flex flex-col items-start  text-[#c8c8c8] lg:justify-center gap-5">
+            <li class="hover:text-[#EE1C25] hover:px-3 duration-200"><a href="../../../index.html">Home</a></li>
+            <li class="hover:text-[#EE1C25] hover:px-3 duration-200"><a href="../../Pages/Aboutus.html">About us</a></li>
+            <li class="hover:text-[#EE1C25] hover:px-3 duration-200"><a href="../../Pages/Projects.html">Projects</a></li>
+            <li class="hover:text-[#EE1C25] hover:px-3 duration-200"><a href="../../Pages/Services.html">What we do</a></li>
+            <li class="hover:text-[#EE1C25] hover:px-3 duration-200"><a href="../../Pages/Career.html">Career</a></li>
+            <li class="hover:text-[#EE1C25] hover:px-3 duration-200"><a href="../../Pages/Contact.html">Contact us</a></li>
+          </ul>
+        </section>
+    
+        <section class="flex flex-col items-start text-[#c8c8c8] justify-center gap-5">
+          <h1 class="text-[#EE1c25] text-lg font-bold text-left">Our Services</h1>
+          <ul class="flex flex-col items-start justify-center gap-5">
+            <li class="hover:text-[#EE1C25] hover:px-3 duration-200">Gaming</li>
+            <li class="hover:text-[#EE1C25] hover:px-3 duration-200">AR/VR</li>
+            <li class="hover:text-[#EE1C25] hover:px-3 duration-200">Production</li>
+          </ul>
+        </section>
+      </div>
   
       <section class="flex flex-col items-start justify-center gap-5 pb-10">
         <h1 class="text-[#EE1c25] text-lg font-bold text-left">Connect with us</h1>
