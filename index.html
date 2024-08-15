@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>D-MAK Studios PVT LTD | Your one-stop shop for world-class 3D assets! </title>
+
+    <link rel="shortcut icon" href="./Assets/Logos/image 4.png" type="image/x-icon">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./Src/main.css">
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</head>
+
+<body class="bg-[#171717] font-Montserrat">
+  <header class="h-[150px] bg-[#171717] lg:h-[160px] bg-[url('./Assets/Logos/Navbar.png')] bg-no-repeat bg-left bg-cover">
+    <nav class="p-5   md:flex md:items-center md:justify-between">
+      <div class="flex justify-between items-center">
+        <span class="text-2xl font-[Poppins] cursor-pointer">
+          <a href="./index.html"><img class="h-[100px] inline mx-[32px] lg:mx-[50px] mt-3 lg:mt-6"
+            src="./Assets/Logos/image 4.png"></a>
+        </span>
+  
+        <span class="text-3xl cursor-pointer mx-2 md:hidden block">
+          <ion-icon name="menu" onclick="Menu(this)" class="text-[#EE1C25] text-3xl"></ion-icon>
+        </span>
+      </div>
+      <ul class="md:flex md:items-center z-[99] md:z-auto md:static absolute bg-[#383838]  w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500">
+        <li class="mx-4 my-6 md:my-0">
+          <a href="./index.html" class="text-xl text-[#EE1C25] font-bold duration-500">Home</a>
+        </li>
+        <li class="mx-4 my-6 md:my-0">
+          <a href="./Src/Pages/Aboutus.html" class="text-xl hover:text-[#EE1C25] duration-500">About</a>
+        </li>
+        <li class="mx-4 my-6 md:my-0">
+          <a href="./Src/Pages/Projects.html" class="text-xl hover:text-[#EE1C25] duration-500">Projects</a>
+        </li>
+        <li class="mx-4 my-6 md:my-0">
+          <a href="./Src/Pages/Services.html" class="text-xl hover:text-[#EE1C25] duration-500">What we do</a>
+        </li>
+        <li class="mx-4 my-6 md:my-0">
+          <a href="./Src/Pages/Career.html" class="text-xl hover:text-[#EE1C25] duration-500">Career</a>
+        </li>
+        <li class="mx-4 my-6 md:my-0">
+          <a href="./Src/Pages/Contact.html" class="text-xl hover:text-[#EE1C25] duration-500">Contact</a>
+        </li>
+        </ul>
+    </nav>
+  </header>
+<main>
+  <div class="h-screen bg-[url('./Assets/Logos/Homesection.png')] bg-no-repeat  bg-cover flex items-center justify-center gap-10 bg-right-top ">
+    <section class="w-[300px] lg:w-[750px] text-center text-white flex flex-col gap-6 items-center justify-center" >
+
+      <h1 class="text-[24px]  lg:text-[48px]  font-bold lg:font-extrabold">
+        Where Imagination Takes Flight
+      </h1>
+      <p class="italic">Experience the future of 3D design where creativity meets innovation, transforming concepts into stunning realities and unforgettable digital worlds.</p>
+      <a href="./Src/Pages/Contact.html" class="px-4 py-2 border-2 w-[200px] border-[#EE1C25] rounded-full hover:bg-[#EE1C25] duration-200"><button>Get Started</button></a>
+    </section>
+
+  </div>
+
+  <div class="h-[250px] flex flex-col items-center justify-center">
+    <h1 class="text-[24px] lg:text-[48px] font-bold lg:font-extrabold text-[#EE1C25]">What we do</h1>
+    <p class="text-[#C0C0C0] w-[300px] lg:w-[800px] text-center">We offer top-tier 3D services in gaming, AR-VR experiences, and high-quality productions, combining technology and creativity to bring your visions to life with immersive and engaging solutions.
+    </p>
+  </div>
+  <div class="bg-[url('./Assets/Logos/Projects.png')] h-[700px] bg-no-repeat bg-bottom bg-cover w-full flex items-center justify-evenly flex-col">
+    <section class="flex items-center flex-col justify-center gap-4">
+      <h1 class="text-[24px] lg:text-[48px] font-bold lg:font-extrabold text-[#EE1C25] text-center ">Projects</h1>
+    <p class="text-[#C0C0C0] w-[300px] lg:w-[800px] text-center">Take a look at some of our best 3D design projects that showcase our creativity, attention to detail, and ability to bring ideas to life.</p>
+    </section>
+    <div class="w-full h-[400px] flex items-center justify-center ">
+        <div class="w-2/12 flex items-center">
+          <div class="w-full text-right px-4">
+            <button class="w-8 lg:w-16 mr-5 " onclick="next()"><img src="./Assets/Logos/Left.png" alt=""></button>
+          </div>
+        </div>
+        <div id="containerSlider" class="w-10/12 h-[350px] overflow-hidden">
+            <div id="slider" class="flex w-full items-center justify-center rounded-xl gap-5 transition-all duration-200 ease-linear">
+              <section class="w-[300px] lg:w-[400px] h-[350px]">
+                <img src="./Environment/Battle_Zoon_Thumnail.jpg" class="w-full h-full shadow-lg object-cover" alt="">
+              </section>
+              <section class="w-[400px] h-[350px]">
+                <img src="./Environment/Building_Thumnail_JPG.jpg" class="w-full  h-full shadow-lg object-cover" alt="">
+              </section>
+              <section class="w-[400px] h-[350px]">
+                <img src="./Environment/Sci - Fi_Station_Thumnail.jpg" class="w-full h-full shadow-lg object-cover" alt="">
+              </section>
+              <section class="w-[400px] h-[350px]">
+                <img src="./Environment/Tea_Shop_Thumnail.jpg" class="w-full h-full shadow-lg object-cover" alt="">
+              </section>
+              <section class="w-[400px] h-[350px]">
+                <img src="./Gaming Props/Cyber Car_Thumnail.jpg" class="w-full h-full shadow-lg object-cover" alt="">
+              </section>
+              <section class="w-[400px] h-[350px]">
+                <img src="./Gaming Props/Horn_Thumnail_JPG.jpg" class="w-full h-full shadow-lg object-cover" alt="">
+              </section>
+              <section class="w-[400px] h-[350px]">
+                <img src="./Gaming Props/Magic_Book_Thumnail.jpg" class="w-full h-full shadow-lg object-cover" alt="">
+              </section>
+              <section class="w-[400px] h-[350px]">
+                <img src="./Products/Shoe_Thumnail.jpg" class="w-full h-full shadow-lg object-cover" alt="">
+              </section>
+              <section class="w-[400px] h-[350px]">
+                <img src="./Products/Camera_Thumnail.jpg" class="w-full h-full shadow-lg object-cover" alt="">
+              </section>
+              <section class="w-[400px] h-[350px]">
+                <img src="./Products/Head_Phone_Thumnail.jpg" class="w-full h-full shadow-lg object-cover" alt="">
+              </section>
+              
+            </div>
+        </div>
+        <div class="w-2/12">
+          <div class="w-full px-4">
+            <button class="w-8 lg:w-16 mr-5 rotate-180 " onclick="prev()"><img src="./Assets/Logos/Left.png" alt=""></button>
+          </div>
+        </div>
+    </div>
+    <a href="./Src/Pages/Projects.html" class="px-4 py-2 border-2 w-[200px] border-[#EE1C25] rounded-full hover:bg-[#EE1C25] duration-200 text-center"><button>View more</button></a>
+  </div>
+  <div class="flex justify-center items-center flex-col gap-5 min-h-[500px] lg:mt-0 mt-20">
+    <div class="w-[300px] md:w-[400px] lg:w-[800px] flex items-center gap-5 justify-center flex-col text-justify" >
+      <section>
+        <h1 class="text-[24px] lg:text-[48px] font-bold lg:font-extrabold text-[#EE1C25] text-center">Our Mission</h1>
+        <p class="text-[#c0c0c0]">
+          To craft groundbreaking games and interactive experiences that push the boundaries of storytelling and immersion. We achieve this by leveraging the power of traditional gaming alongside cutting- edge AR/VR technology, creating unforgettable worlds where players don't just play, they live.
+        </p>
+      </section>
+      <blockquote class="italic text-[#EE1C25]"> "Beyond Play. Beyond Reality."</blockquote>
+      <section>
+        <h1 class="text-[24px] lg:text-[48px] font-bold lg:font-extrabold text-[#EE1C25] text-center ">Our Vision</h1>
+        <p class="text-[#c0c0c0] space-y-2">
+          To become a leading innovator in the gaming industry, where D-MAK Studio is synonymous with unparalleled experiences. We envision a future where players transcend the screen and become active participants in the stories we tell, blurring the lines between reality and the digital realm. Through the power of games and AR/VR, we aim to ignite imaginations, foster connection, and redefine what it means to be entertained.
+        </p>
+      </section>
+      <blockquote class="italic text-[#EE1C25]">"Unparalleled Experiences. Unforgettable Stories."</blockquote>
+   </div>
+  </div>
+<hr class="border-[0.5px] opacity-10">
+  <div class="mt-10 lg:mt-0 flex flex-wrap items-center justify-center flex-col min-h-[100px] gap-10">
+        <h2 class="text-[24px] lg:text-[48px] font-bold lg:font-extrabold text-[#EE1C25]">Touch with us</h2>
+
+        <div class=" w-[300px] lg:w-[800px] flex flex-wrap lg:flex-row flex-col items-start justify-center lg:justify-between">
+            <section>
+                <h1 class="font-bold text-[#EE1C25] ">Email</h1>
+                <a class="text-[#737373]" href="emailto:dmakstudio@gmail.com
+                ">dmakstudio@gmail.com
+            </a>
+            </section>
+            <seciton>
+                <h1 class="font-bold text-[#EE1C25] ">Phone</h1>
+                <p class="text-[#737373]">+91 93446-40617
+                </p>
+            </seciton>
+            <seciton class="w-[250px]">
+                <h1 class="font-bold text-[#EE1C25] ">Address</h1>
+                <p class="text-[#737373]">Smartworks Global Technology Park, Adarsh Palm Retreat, Bellandur, Bengaluru, Karnataka 560103
+                </p>
+            </seciton>
+        </div>
+  </div>
+  <section class="flex flex-col justify-center items-center h-[200px] gap-5 mt-5">
+        <h1 class="text-white text-xl font-bold text-center">Follow us for more updates</h1>
+        <section class="text-white text-md  flex items-start justify-between gap-1 lg:gap-4 flex-wrap">
+          <a href="https://www.linkedin.com/company/d-mak-studio-pvt-ltd/?fbclid=IwY2xjawEe54BleHRuA2FlbQIxMAABHcCwjQkp9uVkIDzwAOnQdFW6fWgx-JkRysnBIU3JOQi_5_yHqTlteWidGg_aem_iz9iw0RFd3mZdlFgFApUEA"><i class="fa-brands fa-linkedin  bg-[#EE1c25] px-3 py-3 text-lg lg:text-3xl rounded-full hover:outline hover:outline-white"></i></a>
+            <a href="https://www.artstation.com/d-makstudio9"><i class="fa-brands fa-artstation  bg-[#EE1c25] px-3 py-3  text-lg lg:text-3xl rounded-full hover:outline    hover:outline-white"></i></a>
+            <a href="https://www.behance.net/d-makstudio3"><i class="fa-brands fa-square-behance  bg-[#EE1c25] px-3 py-3 text-lg lg:text-3xl rounded-full hover:outline   hover:outline-white"></i></a>
+            <a href="https://www.instagram.com/dmakstudio/"><i class="fa-brands fa-instagram  bg-[#EE1c25] px-3 py-3 text-lg lg:text-3xl rounded-full hover:outline hover:outline-white"></i></a>
+            <a href="https://www.behance.net/d-makstudio3"><i class="fa-brands fa-square-x-twitter  bg-[#EE1c25] px-3 py-3 text-lg lg:text-3xl rounded-full hover:outline    hover:outline-white"></i></a>
+            <a href="https://www.facebook.com/profile.php?id=61562620367469"><i class="fa-brands fa-meta  bg-[#EE1c25] px-3 py-3 text-lg lg:text-3xl rounded-full hover:outline   hover:outline-white"></i></a>
+            <a href="https://www.youtube.com/@D-MAKStudio"><i class="fa-brands fa-youtube  bg-[#EE1c25] px-3 py-3 text-lg lg:text-3xl rounded-full hover:outline hover:outline-white"></i></a>
+          </section>
+    </section>
+    <div class="w-full mt-5 flex flex-col gap-5 items-center justify-center">
+        <div class="flex items-center justify-center flex-col gap-10 lg:flex-row ">
+          <div class="w-[300px] h-[300px]">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.7369251441482!2d77.6804690752702!3d12.924622615906136!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae1364c1f6d2df%3A0xffebd2f2f771b0f8!2sD-MAK%20STUDIO%20PRIVATE%20LIMITED!5e0!3m2!1sen!2sin!4v1722943718762!5m2!1sen!2sin"  class="w-full h-[300px] rounded-md" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+          <form action="https://api.web3forms.com/submit" method="POST" class="flex flex-col gap-5 items-center justify-center">
+            <input type="hidden" name="access_key" value="00c10e02-c4b7-45fb-acaa-c2b62159c43e">
+
+            <input type="text" placeholder="Firstname" name="name" id="" class="rounded-sm w-[300px] focus:outline-2 focus:outline-[#EE1C25] px-4 py-2">
+            <input type="email" placeholder="Enter your email" name="mail" id="" class="rounded-sm w-[300px] focus:outline-2 focus:outline-[#EE1C25] px-4 py-2">
+            <input type="tel    " placeholder="+91 9876543210" name="phone" id="" class="rounded-sm w-[300px] focus:outline-2 focus:outline-[#EE1C25] px-4 py-2">
+            <textarea name="feedback" rows="2" cols="50" placeholder="Write your message here!" id="" class="rounded-sm w-[300px] focus:outline-2 focus:outline-[#EE1C25] px-4 py-2"></textarea>
+
+            <button type="submit" class="bg-black text-[#EE1C25] border-2 border-[#EE1C25] w-[300px] rounded-md py-2">Send Message</button>
+        </form>
+        </div>
+    </div>
+  </div>
+</main>
+<br><br>
+<!-- Footer -->
+<footer class="min-h-[400px] bg-[#424242] lg:bg-transparent lg:bg-[url('./Assets/Logos/Footerimg.png')] w-full bg-no-repeat bg-left lg:bg-center bg-cover lg:bg-cover flex flex-col lg:flex-row items-center justify-evenly">
+    <section class="flex flex-col gap-2 items-center justify-center mt-5">
+      <img src="./Assets/Logos/image 4.png" class="w-[100px]" alt="">
+
+      <p class="text-center italic text-[#EE1C25]">"WHERE IMAGINATION TAKES FLIGHT"</p>
+    </section>
+    <section class="lg:mt-[100px] w-28">
+      <ul class="flex flex-col items-start text-[#c8c8c8] justify-start lg:justify-center gap-5">
+        <li class="hover:text-[#EE1C25] hover:px-3 duration-200"><a href="./index.html">Home</a></li>
+        <li class="hover:text-[#EE1C25] hover:px-3 duration-200"><a href="./Src/Pages/Aboutus.html">About us</a></li>
+        <li class="hover:text-[#EE1C25] hover:px-3 duration-200"><a href="././Src/Pages/Projects.html">Projects</a></li>
+        <li class="hover:text-[#EE1C25] hover:px-3 duration-200"><a href="./Src/Pages/Services.html">What we do</a></li>
+        <li class="hover:text-[#EE1C25] hover:px-3 duration-200"><a href="./Src/Pages/Career.html">Career</a></li>
+        <li class="hover:text-[#EE1C25] hover:px-3 duration-200"><a href="./Src/Pages/Contact.html">Contact us</a></li>
+      </ul>
+    </section>
+    <section class="flex flex-col items-start text-[#c8c8c8] justify-center gap-5">
+      <h1 class="text-[#EE1c25] text-lg font-bold text-left">Our Services</h1>
+      <ul class="flex flex-col items-start justify-center gap-5">
+        <li class="hover:text-[#EE1C25] hover:px-3 duration-200">Gaming</li>
+        <li class="hover:text-[#EE1C25] hover:px-3 duration-200">AR/VR</li>
+        <li class="hover:text-[#EE1C25] hover:px-3 duration-200">Production</li>
+      </ul>
+    </section>
+    <section class="flex flex-col items-start justify-center gap-5 pb-10">
+      <h1 class="text-[#EE1c25] text-lg font-bold text-center mt-2">Connect with us</h1>
+      <section class="text-white text-md  flex items-start justify-between gap-4 flex-wrap">
+        <a href="https://www.linkedin.com/company/d-mak-studio-pvt-ltd/?fbclid=IwY2xjawEe54BleHRuA2FlbQIxMAABHcCwjQkp9uVkIDzwAOnQdFW6fWgx-JkRysnBIU3JOQi_5_yHqTlteWidGg_aem_iz9iw0RFd3mZdlFgFApUEA"><i class="fa-brands fa-linkedin  bg-[#EE1c25] px-1 py-1 rounded-full hover:outline hover:outline-white"></i></a>
+          <a href="https://www.artstation.com/d-makstudio9"><i class="fa-brands fa-artstation  bg-[#EE1c25] px-1 py-1 rounded-full hover:outline    hover:outline-white"></i></a>
+          <a href="https://www.behance.net/d-makstudio3"><i class="fa-brands fa-square-behance  bg-[#EE1c25] px-1 py-1 rounded-full hover:outline   hover:outline-white"></i></a>
+          <a href="https://www.instagram.com/dmakstudio/"><i class="fa-brands fa-instagram  bg-[#EE1c25] px-1 py-1 rounded-full hover:outline hover:outline-white"></i></a>
+          <a href="https://www.behance.net/d-makstudio3"><i class="fa-brands fa-square-x-twitter  bg-[#EE1c25] px-1 py-1 rounded-full hover:outline    hover:outline-white"></i></a>
+          <a href="https://www.facebook.com/profile.php?id=61562620367469"><i class="fa-brands fa-meta  bg-[#EE1c25] px-1 py-1 rounded-full hover:outline   hover:outline-white"></i></a>
+          <a href="https://www.youtube.com/@D-MAKStudio"><i class="fa-brands fa-youtube  bg-[#EE1c25] px-1 py-1 rounded-full hover:outline hover:outline-white"></i></a>
+        </section>
+        <section class="flex flex-col gap-5">
+            <section class="flex flex-row gap-4">
+                <h1 class="font-bold text-[#EE1C25] ">Email</h1>
+                <a class="text-[#737373]" href="emailto:dmakstudio@gmail.com
+                ">dmakstudio@gmail.com
+            </a>
+            </section>
+            <seciton class="flex flex-row gap-4">
+                <h1 class="font-bold text-[#EE1C25] ">Phone</h1>
+                <p class="text-[#737373]">+91 93446-40617
+                </p>
+            </seciton>
+            <seciton class="w-[250px]">
+                <h1 class="font-bold text-[#EE1C25] ">Address</h1>
+                <p class="text-[#737373]">Smartworks Global Technology Park, Adarsh Palm Retreat, Bellandur, Bengaluru, Karnataka 560103
+                </p>
+            </seciton>
+        </section>
+    </section>
+</footer>
+
+  <script src="./Src/index.js"></script>
+  <script src="https://kit.fontawesome.com/dc1f9ab20d.js" crossorigin="anonymous"></script>
+  <script src="./Src/components/slider.js"></script>
+  <script src="./Src/Secure.js"></script>
+</body>
+</html>
